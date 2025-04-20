@@ -9,12 +9,9 @@ const { title, description, keywords, author, additionalContent } = Astro.props;
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">      
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
       <link rel="stylesheet" href="/static/cookie.css">
-      <link rel="stylesheet" href="/static/other.css">
+      <link rel="stylesheet" href="/static/secondary.css">
       <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
-      <link rel="preload" as="style" href="/static/other.css">
       <link rel="preload" as="script" href="/static/darkmode.js">
-      <link rel="preload" as="script" href="/static/alert-1.js">
-      <link rel="preload" as="script" href="/static/alert-2.js">
       <link rel="shortcut icon" type="image/png" href="/media/favicon/favicon.png">
       <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png">
       <link rel="icon" type="image/png" href="/media/favicon/favicon.png">
@@ -26,7 +23,7 @@ const { title, description, keywords, author, additionalContent } = Astro.props;
       <meta name="twitter:image" content="/media/favicon/iconembed.png">
       <link rel="manifest" href="/media/favicon/site.webmanifest">
       <meta charset="UTF-8">
-      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="msapplication-TileColor" content="#bbbbbb">
       <meta name="title" content={title}>
       <meta name="description" content={description}>
       <meta name="twitter:card" content="summary">
@@ -42,7 +39,7 @@ const { title, description, keywords, author, additionalContent } = Astro.props;
       )}
       <meta property="og:title" content={title}>
       <meta property="og:description" content={description}>
-      <meta name="theme-color" content="">
+      <meta name="theme-color" content="#bbbbbb">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <Fragment set:html={additionalContent}>

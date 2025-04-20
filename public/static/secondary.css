@@ -1,0 +1,78 @@
+.main-navbar {
+	& {
+	  --bs-bg-opacity: 1;
+	  background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+		box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15) !important;
+	}
+
+	[data-bs-theme=dark] & {
+	--bs-bg-opacity: 1;
+	  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+	  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.15) !important;
+	}
+	
+	[data-bs-theme="dark"] &.shadow {
+	  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.15) !important;
+	}
+	
+	[data-bs-theme="dark"] &.shadow-sm {
+	  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.15) !important;
+	}
+	
+	[data-bs-theme="dark"] &.shadow-lg {
+	  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.15) !important;
+	}
+	
+	[data-bs-theme="dark"] &.shadow-xlg {
+	  box-shadow: 0 1rem 3rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.15) !important;
+	}
+	
+	&.shadow {  
+		box-shadow: 0 0.25rem 0.5rem rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.15) !important;
+	}
+	
+	&.shadow-sm {
+	  box-shadow: 0 0.125rem 0.25rem rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.15) !important;
+	}
+	
+	&.shadow-lg {
+		 box-shadow: 0 0.5rem 1rem rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.15) !important;
+	}
+		
+	&.shadow-xlg {
+		 box-shadow: 0 1rem 3rem rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.15) !important;
+	}
+}
+
+.link-footer, .link-carousel {
+  color: RGBA(var(--bs-dark-rgb, var(--bs-link-opacity, 1)));
+  -webkit-text-decoration-color: RGBA(var(--bs-dark-rgb), var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(var(--bs-dark-rgb), var(--bs-link-underline-opacity, 1));
+}
+.link-footer:hover, .link-footer:focus, .link-carousel:hover, .link-carousel:focus {
+  color: RGBA(26, 30, 33, var(--bs-link-opacity, 1));
+  -webkit-text-decoration-color: RGBA(26, 30, 33, var(--bs-link-underline-opacity, 1));
+  text-decoration-color: RGBA(26, 30, 33, var(--bs-link-underline-opacity, 1));
+}
+
+[data-bs-theme=dark] .link-footer {
+  color: var(--bs-secondary-color)!important;
+}
+
+body.fixedtopnav {
+  padding-top: 72px;
+}
+
+html.fixedtopnav {
+  scroll-padding-top: calc(72px + 5px);
+}
+
+@media (max-width: 991.98px) {
+  body.fixedtopnav {
+    padding-top: 144px;
+  }
+
+  html.fixedtopnav {
+    scroll-padding-top: calc(144px + 5px);
+  }
+}
