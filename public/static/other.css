@@ -6695,19 +6695,11 @@ a:hover.footer-info {
 }
 
 body.fixedtopnav {
-  padding-top: 56px;
+  padding-top: 72px;
 }
 
 html.fixedtopnav {
-  scroll-padding-top: 61px;
-}
-
-body.fixedtopnavimage {
-  padding-top: 71px;
-}
-
-html.fixedtopnavimage {
-  scroll-padding-top: 76px;
+  scroll-padding-top: calc(72px + 5px);
 }
 
 .modal-body-title, .title {
