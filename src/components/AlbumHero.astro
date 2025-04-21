@@ -5,9 +5,9 @@ const { title, description, icons, image } = Astro.props;
 <div class="hero hero-main mb-3" data-bs-theme="dark">
   <div class="hero-back">
     <div class="hero-filter">
-      <div class="py-5 container d-flex align-items-md-stretch">
-        <div class="col-md">
-          <div class="h-100 pe-5">
+      <div class="py-5 container d-grid d-xl-flex gap-3 gap-xl-0 align-items-xl-stretch">
+        <div class="col-xl">
+          <div class="h-100 pe-xl-5">
             <div class="text-center">
               <h1 class="display-5 fw-bolder">{title}</h1>
               {description && (
@@ -27,10 +27,10 @@ const { title, description, icons, image } = Astro.props;
             )}
           </div>
         </div>
-        <div class="col-md-auto rounded-3">
+        <div class="col-xl-auto rounded-3 justify-content-center justify-content-xl-start">
           {image && (
             image.map(({ src, alt }, index) => (
-              <img src={`/media/images/${src}`} alt={alt} class="img-fluid rounded-3 ms-auto" style="max-height:450px;">
+              <img src={`/media/images/${src}`} alt={alt} class="img-fluid rounded-3 d-block mx-auto" style="max-height:450px;">
             ))
           )}
         </div>

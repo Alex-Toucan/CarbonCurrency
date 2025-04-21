@@ -86,7 +86,6 @@ html.fixedtopnav {
 .hero {
   width: 100%;
   position: relative;
-  z-index: 1000;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;   
@@ -134,20 +133,12 @@ html.fixedtopnav {
 }
 
 .back-to-top {
-  position: fixed;
   display: none;
-  right: 30px;
-  bottom: 47.5px;
+  bottom: calc(42px + 1rem) !important;
   box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
-  z-index: 1050;
+  z-index: 1000;
   color: white;
   background-color: black;
-}
-
-@media (min-width:1079.98px) {
-  .back-to-top {
-    bottom: 30px !important;
-  }
 }
 
 .back-to-top:hover {
@@ -177,4 +168,8 @@ html.fixedtopnav {
 
 .dropdown-item {
   border-radius: var(--bs-border-radius-sm);
+}
+
+.dropdown-menu li+li {
+  margin-top: 0.125rem;
 }

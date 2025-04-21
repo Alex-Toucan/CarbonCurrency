@@ -17,8 +17,11 @@
 		left: 0px !important;
 		width: 100%  !important;
 	}
-	.back-to-top:has(+ .cookieConsentContainer) {
-		bottom: 225px !important;
+	#fixedelements:has(+ .cookieConsentContainer) #theme-toggle {
+		bottom: 230px !important;
+	}
+  #fixedelements:has(+ .cookieConsentContainer) .back-to-top {
+		bottom: calc(230px + 42px + 1rem) !important;
 	}
 }
 
