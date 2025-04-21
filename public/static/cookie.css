@@ -6,7 +6,7 @@
 	padding: 2rem;
 	overflow: hidden;
 	position: fixed;
-  	bottom: 30px;
+  bottom: 30px;
 	left: 30px;
 	display: none;
 }
@@ -22,6 +22,12 @@
 	}
   #fixelements:has(+ .cookieConsentContainer) .back-to-top {
 		bottom: calc(230px + 42px + 1rem) !important;
+	}
+}
+
+@media (min-width: 767.98px) {
+  .rounded-md-3 {
+		border-radius: var(--bs-border-radius-lg) !important;
 	}
 }
 
