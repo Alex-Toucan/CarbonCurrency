@@ -7,7 +7,7 @@ import ColorChanger from '../components/ColorChanger.astro';
 import AlbumHero from '../components/AlbumHero.astro';
 ---
 
-<DefaultBody title="Carbon Currency" description="Rap Duo from Tacoma, WA consisting of Preston Clavesilla & Miles" keywords="Inferno, BxPP, AT Products LLC" author="Black Carbon & Millibands">
+<DefaultBody title="Carbon Currency" description="Rap Duo from Tacoma, WA consisting of Preston Clavesilla & Miles" keywords="Inferno, BxPP, AT Products LLC" author="Black Carbon & Millibands" figure="true">
 
 <div id="page">
 	<Navbar />
@@ -27,11 +27,17 @@ import AlbumHero from '../components/AlbumHero.astro';
       ]}  
     />
 	  <main id="index" class="container">
-      <div class="text-center p-3">
-        <i class="fs-1 bi bi-cone-striped" style="font-size: 10rem !important;"></i>
-        <p class="display-4"> This section is under development. </p>
+      <div id="general-info">
+        <h1 class="h2 fw-bold display-5">Carbon Currency</h2>
+        <div id="article" class="h-100">
+          <figure class="figure ms-md-3 mt-0 mb-2 float-md-end">
+            <img src="/media/images/group.png" alt="Figure Image" width="50%" class="rounded-1 mx-md-auto me-md-0 ms-md-auto" style="max-width: 375px;display: block;"> 
+            <figcaption class="figure-caption mt-2 text-wrap text-md-end me-md-auto">The duo of Miles (left) and Preston (right).</figcaption> 
+          </figure>
+          <p>Carbon Currency is a rap duo from Tacoma, Washington consisting of <a href="https://www.instagram.com/millibands_/">Millibands/Miles</a> and <a href="https://www.instagram.com/pdawg_0613/">Preston Clavesilla</a>. The Rap Duo would begin in March of 2025, and has 3 releases total.</p>
+        </div>
       </div>
-		</main>
+    </main>
 	</div>
   <div id="fixelements">
     <ColorChanger />

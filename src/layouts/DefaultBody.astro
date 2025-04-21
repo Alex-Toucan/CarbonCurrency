@@ -1,5 +1,5 @@
 ---
-const { title, description, keywords, author, additionalContent } = Astro.props;
+const { title, description, keywords, author, additionalContent, figure } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -59,6 +59,9 @@ const { title, description, keywords, author, additionalContent } = Astro.props;
       <script is:inline src="/static/scroll.js"></script>
       <script is:inline src="/static/purecookie.js"></script>
       <script is:inline src="/static/enabler.js"></script>
+      {figure && (
+        <script is:inline src="/static/figure.js" defer></script>
+      )}  
     </Fragment>
   </body>
 </html>
