@@ -7,32 +7,45 @@ import BackToTop from '../components/BackToTop.astro';
 
 <DefaultBody title="Carbon Currency" description="Rap Duo from Tacoma, WA consisting of Preston Clavesilla & Miles" keywords="Inferno, BxPP, AT Products LLC" author="Black Carbon & Millibands">
 
-<style is:global>
-  .fs-4 {
-    font-size: 1.5rem !important;
-  }
-</style>
-
 <div id="page">
 	<Navbar />
 	<div id="main-content">
-	  <main id="bxpp" class="container pt-3">
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-bg-dark rounded-3">
-            <h2>Change the background</h2>
-            <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-            <button class="btn btn-outline-light" type="button">Example button</button>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-            <h2>Add borders</h2>
-            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-            <button class="btn btn-outline-secondary" type="button">Example button</button>
+    <div class="hero hero-main mb-3" data-bs-theme="dark">
+      <div class="hero-back">
+        <div class="hero-filter">
+          <div class="py-5 container d-flex align-items-md-stretch">
+            <div class="col-md">
+              <div class="h-100 pe-5">
+                <div class="text-center">
+                  <h1 class="display-5 fw-bolder">GOLD HEARTZ NEVA RUST</h1>
+                  <div class="h2 fw-bold text-warning" data-astro-cid-d4ybmjtt="">OUT NOW!</div>               
+                </div>
+                <div class="text-center tab-link">
+                  <div class="d-flex gap-5 justify-content-center">
+                    <a class="link-body-emphasis" href="https://music.youtube.com/playlist?list=OLAK5uy_kd2YNtuHfKRfpXRlpkwn1kuvfMHWcT7ZA" aria-label="YouTube Music">
+                      <i class="bi fs-1 bi-youtube"></i>
+                    </a>
+                    <a class="link-body-emphasis" href="https://open.spotify.com/album/5nrXPtZ6yltHZzCfiklOtB" aria-label="Spotify">
+                      <i class="bi fs-1 bi-spotify"></i>
+                    </a>
+                    <a class="link-body-emphasis" href="https://open.spotify.com/album/5nrXPtZ6yltHZzCfiklOtB" aria-label="SoundCloud">
+                      <i class="bi fs-1 bi-cloud-fill"></i>
+                    </a>
+                    <a class="link-body-emphasis" href="https://www.bandlab.com/black__carbon/albums/7f308740-2613-f011-aaa7-000d3a930a05" aria-label="BandLab">
+                      <i class="bi fs-1 bi-music-note"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-auto rounded-3">
+              <img src="/media/images/album.webp" alt="Album Cover" class="img-fluid rounded-3 ms-auto" style="max-height:450px;">
+            </div>
           </div>
         </div>
       </div>
+    </div>
+	  <main id="bxpp" class="container">
 			<div id="general-info">
 				<h2> General Information </h2>
 				<p> BxPP, made by Pynx, is a custom Python programming language. </p>

@@ -1,3 +1,9 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: white; /* Default for dark mode */
+  }
+}
+
 .main-navbar {
 	& {
 	  --bs-bg-opacity: 1;
@@ -60,11 +66,11 @@
 }
 
 body.fixedtopnav {
-  padding-top: 72px;
+  padding-top: 68px;
 }
 
 html.fixedtopnav {
-  scroll-padding-top: calc(72px + 5px);
+  scroll-padding-top: calc(68px + 5px);
 }
 
 @media (max-width: 991.98px) {
@@ -75,4 +81,31 @@ html.fixedtopnav {
   html.fixedtopnav {
     scroll-padding-top: calc(144px + 5px);
   }
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;   
+}
+
+.hero-back {
+  border-bottom: solid 1px #dee2e6;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-filter {
+  filter: drop-shadow(2px 4px 6px black)
+}
+
+.hero-main {
+  background: url('/media/images/album.webp');
+}
+
+.tab-link {
+	position: sticky;
+	top: 100%;
 }
