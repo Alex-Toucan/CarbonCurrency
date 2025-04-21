@@ -1,0 +1,40 @@
+---
+const { title, description, icons, image } = Astro.props;
+---
+
+<div class="hero hero-main mb-3" data-bs-theme="dark">
+  <div class="hero-back">
+    <div class="hero-filter">
+      <div class="py-5 container d-flex align-items-md-stretch">
+        <div class="col-md">
+          <div class="h-100 pe-5">
+            <div class="text-center">
+              <h1 class="display-5 fw-bolder">{title}</h1>
+              {description && (
+                <Fragment set:html={description} />      
+              )}       
+            </div>
+            {icons && (
+              <div class="text-center tab-link">
+                <div class="d-flex gap-5 justify-content-center">
+                  {icons.map(({ href, text, icon }, index) => (
+                    <a class="link-body-emphasis" href={href} aria-label={text} target="_blank" rel="noopener noreferrer" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title={text}>
+                      <i class={`bi fs-1 bi-${icon}`}></i>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+        <div class="col-md-auto rounded-3">
+          {image && (
+            image.map(({ src, alt }, index) => (
+              <img src={`/media/images/${src}`} alt={alt} class="img-fluid rounded-3 ms-auto" style="max-height:450px;">
+            ))
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

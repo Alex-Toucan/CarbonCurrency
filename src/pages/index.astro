@@ -3,6 +3,7 @@ import DefaultBody from '../layouts/DefaultBody.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import BackToTop from '../components/BackToTop.astro';
+import AlbumHero from '../components/AlbumHero.astro';
 ---
 
 <DefaultBody title="Carbon Currency" description="Rap Duo from Tacoma, WA consisting of Preston Clavesilla & Miles" keywords="Inferno, BxPP, AT Products LLC" author="Black Carbon & Millibands">
@@ -10,41 +11,19 @@ import BackToTop from '../components/BackToTop.astro';
 <div id="page">
 	<Navbar />
 	<div id="main-content">
-    <div class="hero hero-main mb-3" data-bs-theme="dark">
-      <div class="hero-back">
-        <div class="hero-filter">
-          <div class="py-5 container d-flex align-items-md-stretch">
-            <div class="col-md">
-              <div class="h-100 pe-5">
-                <div class="text-center">
-                  <h1 class="display-5 fw-bolder">GOLD HEARTZ NEVA RUST</h1>
-                  <div class="h2 fw-bold text-warning" data-astro-cid-d4ybmjtt="">OUT NOW!</div>               
-                </div>
-                <div class="text-center tab-link">
-                  <div class="d-flex gap-5 justify-content-center">
-                    <a class="link-body-emphasis" href="https://music.youtube.com/playlist?list=OLAK5uy_kd2YNtuHfKRfpXRlpkwn1kuvfMHWcT7ZA" aria-label="YouTube Music">
-                      <i class="bi fs-1 bi-youtube"></i>
-                    </a>
-                    <a class="link-body-emphasis" href="https://open.spotify.com/album/5nrXPtZ6yltHZzCfiklOtB" aria-label="Spotify">
-                      <i class="bi fs-1 bi-spotify"></i>
-                    </a>
-                    <a class="link-body-emphasis" href="https://open.spotify.com/album/5nrXPtZ6yltHZzCfiklOtB" aria-label="SoundCloud">
-                      <i class="bi fs-1 bi-cloud-fill"></i>
-                    </a>
-                    <a class="link-body-emphasis" href="https://www.bandlab.com/black__carbon/albums/7f308740-2613-f011-aaa7-000d3a930a05" aria-label="BandLab">
-                      <i class="bi fs-1 bi-music-note"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-auto rounded-3">
-              <img src="/media/images/album.webp" alt="Album Cover" class="img-fluid rounded-3 ms-auto" style="max-height:450px;">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <AlbumHero 
+      title="GOLD HEARTZ NEVA RUST" 
+      description="<div class='h2 fw-bold text-warning'>OUT NOW!</div>"
+      icons={[
+        { icon: "youtube", text: "YouTube Music", href: "https://music.youtube.com/playlist?list=OLAK5uy_kd2YNtuHfKRfpXRlpkwn1kuvfMHWcT7ZA" },
+        { icon: "spotify", text: "Spotify", href: "https://open.spotify.com/album/5nrXPtZ6yltHZzCfiklOtB" },
+        { icon: "cloud-fill", text: "SoundCloud", href: "https://open.spotify.com/album/5nrXPtZ6yltHZzCfiklOtB" },
+        { icon: "music-note", text: "BandLab", href: "https://www.bandlab.com/black__carbon/albums/7f308740-2613-f011-aaa7-000d3a930a05" },
+      ]}    
+      image={[
+        { src: "album.webp", alt: "Album Cover" },
+      ]}  
+    />
 	  <main id="bxpp" class="container">
 			<div id="general-info">
 				<h2> General Information </h2>
