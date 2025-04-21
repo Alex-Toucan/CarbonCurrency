@@ -1,0 +1,33 @@
+@font-face {
+  font-display: block;
+  font-family: "customicons";
+  src: url("/media/fonts/customicons.woff2") format("woff2"),
+url("/media/fonts/customicons.woff") format("woff");
+}
+
+.ci::before,
+[class^="ci-"]::before,
+[class*=" ci-"]::before {
+  display: inline-block;
+  font-family: customicons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/*vertical-align: -.125em;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ci-bandlab::before { 
+  content: "\0042"; 
+}
+.ci-soundcloud::before { 
+  content: "\0053"; 
+  vertical-align: -.125em;
+}
+.ci-ytmusic::before { 
+  content: "\0059"; 
+  vertical-align: 0.0em;
+}
