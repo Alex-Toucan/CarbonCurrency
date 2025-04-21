@@ -30,7 +30,7 @@ const { title, description, icons, image } = Astro.props;
         <div class="col-xl-auto rounded-3 justify-content-center justify-content-xl-start">
           {image && (
             image.map(({ src, alt }, index) => (
-              <img src={`/media/images/${src}`} alt={alt} class="img-fluid rounded-3 d-block mx-auto" style="max-height:450px;">
+              <img src={`/media/images/${src}`} alt={alt} class="img-fluid rounded-3 d-block mt-3 mt-md-0 mx-auto" style="max-height:450px;">
             ))
           )}
         </div>
