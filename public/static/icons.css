@@ -29,5 +29,5 @@ url("/media/fonts/customicons.woff") format("woff");
 }
 .ci-ytmusic::before { 
   content: "\0059"; 
-  vertical-align: 0.0em;
+  vertical-align: 0.1em;
 }
