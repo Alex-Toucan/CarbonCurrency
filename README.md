@@ -1,5 +1,5 @@
 <div align="center">
- <a href="https://carbon-currency.netlify.app"><h1>Carbon Currency</h1></a>
+ <h1><a href="https://carbon-currency.netlify.app">Carbon Currency</a></h1>
  <p> 
   <img src="https://img.shields.io/badge/made%20with-love-E760A4.svg" alt="Made with love"> 
   <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
