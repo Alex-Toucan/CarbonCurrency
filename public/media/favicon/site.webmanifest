@@ -1,7 +1,7 @@
 {
   "name": "Carbon Currency",
   "short_name": "Carbon Currency",
-  "theme_color": "#bbbbbb",
+  "theme_color": "#212529",
   "background_color": "#ffffff",
   "display": "standalone",
   "start_url": "/",
