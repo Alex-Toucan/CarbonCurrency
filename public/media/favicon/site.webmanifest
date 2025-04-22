@@ -1,0 +1,21 @@
+{
+  "name": "Carbon Currency",
+  "short_name": "Carbon Currency",
+  "theme_color": "#212529",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/media/favicon/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/favicon/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
