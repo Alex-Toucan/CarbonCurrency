@@ -5,7 +5,7 @@ export default defineConfig({
     fonts: [{
       provider: "local",
       name: "CustomIcons",
-      cssVariable: "--font-customicons",
+      cssVariable: "--font-customicons", 
       display: "block",
       variants: [
         {
