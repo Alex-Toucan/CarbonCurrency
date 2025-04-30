@@ -6,17 +6,18 @@ export default defineConfig({
       provider: "local",
       name: "CustomIcons",
       cssVariable: "--font-customicons", 
-      display: "block",
       variants: [
         {
           weight: 400,
           style: "normal",
-          src: ["./src/assets/fonts/customicons.woff"]
+          src: ["./src/assets/fonts/customicons.woff"],
+          display: "block"
         },
         {
           weight: 400,
           style: "normal",
-          src: ["./src/assets/fonts/customicons.woff2"]
+          src: ["./src/assets/fonts/customicons.woff2"],
+          display: "block"
         }
       ]
     }]
