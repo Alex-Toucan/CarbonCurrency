@@ -1,19 +1,24 @@
-import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
-/* import compress from "astro-compress"; */
+import { defineConfig } from "astro/config";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [
-    react()/*, 
-    compress({
-      css: false,
-      html: true,
-      img: true,
-      js: true,
-      image: true,
-      svg: true,
-    })
-    */
-  ]
-})
+  experimental: {
+    fonts: [{
+      provider: "local",
+      name: "CustomIcons",
+      cssVariable: "--font-customicons",
+      display: "block",
+      variants: [
+        {
+          weight: 400,
+          style: "normal",
+          src: ["./src/assets/fonts/customicons.woff"]
+        },
+        {
+          weight: 400,
+          style: "normal",
+          src: ["./src/assets/fonts/customicons.woff2"]
+        }
+      ]
+    }]
+  }
+});
