@@ -12,6 +12,4 @@ if (section && figure && paragraph) {
 
     // Apply the calculated height to #section
     section.style.minHeight = `${newMinHeight}px`;
-} else {
-    console.error("Unable to find one or more required elements.");
 }
