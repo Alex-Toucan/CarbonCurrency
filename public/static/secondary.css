@@ -307,3 +307,7 @@ html.fixedtopnav {
     margin-left: auto !important;
   }
 }
+
+.fs-4 {
+  font-size: 1.5rem !important;
+}
