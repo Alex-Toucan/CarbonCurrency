@@ -18,7 +18,7 @@
 }
 .ci-soundcloud::before { 
   content: "\0053"; 
-  vertical-align: -.125em;
+  vertical-align: -.25em;
 }
 .ci-ytmusic::before { 
   content: "\0059"; 
