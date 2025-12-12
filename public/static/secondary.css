@@ -75,11 +75,11 @@ html.fixedtopnav {
 
 @media (max-width: 991.98px) {
   body.fixedtopnav {
-    padding-top: 144px;
+    padding-top: 145.8px;
   }
 
   html.fixedtopnav {
-    scroll-padding-top: calc(144px + 5px);
+    scroll-padding-top: calc(145.8px + .5rem);
   }
 }
 
