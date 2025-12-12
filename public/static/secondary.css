@@ -307,3 +307,8 @@ html.fixedtopnav {
     margin-left: auto !important;
   }
 }
+
+.text-justify:
+	text-align: justify;
+}
+
