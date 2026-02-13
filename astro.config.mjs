@@ -1,6 +1,18 @@
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
+  integrations: [
+    react()/*, 
+    compress({
+      css: false,
+      html: true,
+      img: true,
+      js: true,
+      image: true,
+      svg: true,
+    })
+    */
+  ],
   experimental: {
     fonts: [{
       provider: "local",
