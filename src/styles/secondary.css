@@ -66,20 +66,20 @@
 }
 
 body.fixedtopnav {
-  padding-top: 69.8px;
+  padding-top: 68px;
 }
 
 html.fixedtopnav {
-  scroll-padding-top: calc(69.8px + .5rem);
+  scroll-padding-top: calc(68px + .5rem);
 }
 
 @media (max-width: 991.98px) {
   body.fixedtopnav {
-    padding-top: 145.8px;
+    padding-top: 138.78px;
   }
 
   html.fixedtopnav {
-    scroll-padding-top: calc(145.8px + .5rem);
+    scroll-padding-top: calc(138.78px + .5rem);
   }
 }
 
