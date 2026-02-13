@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import react from "@astrojs/react";
 // import compress from "astro-compress";
 
@@ -17,23 +17,25 @@ export default defineConfig({
   ],
   experimental: {
     fonts: [{
-      provider: "local",
+      provider: fontProviders.local(),
       name: "CustomIcons",
       cssVariable: "--font-customicons", 
-      variants: [
-        {
-          weight: 400,
-          style: "normal",
-          src: ["./src/assets/fonts/customicons.woff"],
-          display: "block"
-        },
-        {
-          weight: 400,
-          style: "normal",
-          src: ["./src/assets/fonts/customicons.woff2"],
-          display: "block"
-        }
-      ]
+      options: {
+        variants: [
+          {
+            weight: 400,
+            style: "normal",
+            src: ["./src/assets/fonts/customicons.woff"],
+            display: "block"
+          },
+          {
+            weight: 400,
+            style: "normal",
+            src: ["./src/assets/fonts/customicons.woff2"],
+            display: "block"
+          }
+        ]
+      }
     }],
     csp: {
       styleDirective: {
