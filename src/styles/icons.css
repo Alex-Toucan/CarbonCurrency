@@ -16,6 +16,10 @@
 .ci-bandlab::before { 
   content: "\0042"; 
 }
+.ci-soundcloud::before { 
+  content: "\0053"; 
+  vertical-align: -.2em;
+}
 .ci-ytmusic::before { 
   content: "\0059"; 
   vertical-align: 0.1em;

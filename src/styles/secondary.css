@@ -66,20 +66,20 @@
 }
 
 body.fixedtopnav {
-  padding-top: 68px;
+  padding-top: 69.8px;
 }
 
 html.fixedtopnav {
-  scroll-padding-top: calc(68px + 5px);
+  scroll-padding-top: calc(69.8px + .5rem);
 }
 
 @media (max-width: 991.98px) {
   body.fixedtopnav {
-    padding-top: 144px;
+    padding-top: 145.8px;
   }
 
   html.fixedtopnav {
-    scroll-padding-top: calc(144px + 5px);
+    scroll-padding-top: calc(145.8px + .5rem);
   }
 }
 
@@ -308,6 +308,7 @@ html.fixedtopnav {
   }
 }
 
-.fs-4 {
-  font-size: 1.5rem !important;
+.text-justify {
+	text-align: justify;
 }
+
